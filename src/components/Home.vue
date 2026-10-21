@@ -21,7 +21,7 @@
     </div>
 
     <div class="bg-gray-50 py-5 rounded-md">
-      <div class="grid grid-cols-6 flex h-full items-center text-center">
+      <div class="grid grid-cols-6 h-full items-center text-center">
 
         <p class="font-semibold">1. </p>
         <p class="font-semibold">Crystal Marise Filamen</p>
