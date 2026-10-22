@@ -5,11 +5,13 @@ import Navbar from './components/Navbar.vue'
 import Students from './components/Students.vue'
 import AddModal from './components/AddModal.vue'
 import User from './components/User.vue'
+import Reports from './components/Reports.vue'
 
 export default {
   name: 'App',
   components: {
-    Footer, Home, Navbar, Students, AddModal,User
+  
+    Footer, Home, Navbar, Students, AddModal, User, Reports 
   },
   data() {
     return {
@@ -41,5 +43,6 @@ export default {
   <Home v-if="page === 'Home'" :studentHome="listsOfStudents" />
   <Students v-if="page === 'Students'" @open="showModal"/>
   <User v-if="page === 'user'" />
+  <Reports v-if="page === 'Reports'" />
   <Footer />
 </template>
