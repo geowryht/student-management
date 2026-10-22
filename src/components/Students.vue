@@ -1,13 +1,31 @@
+<script>
+export default {
+  emits: ['open'],
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+    addBtn() {
+      this.$emit('open', true);
+    },
+
+  }
+}
+
+</script>
+
 <template>
- <div class="w-full h-screen px-10 py-5">
+  <main class="page">
 
+    <div class="flex justify-end px-5 w-full">
+      <button @click="addBtn" class="px-5 py-3 bg-slate-600 text-white text-center rounded-lg hover:bg-slate-400 
+        hover:text-black hover:scale-105 duration-300 hover:font-semibold cursor-pointer">+
+        Add</button>
+    </div>
 
-    <p class="text-2xl font-semibold mb-5 ">This is students page</p>
-    <div class="w-full h-fit min-h-20 p-5 text-gray-800 text-center border flex  justify-between items-center bg-gray-50 shadow-xl rounded-lg mb-2">
-      <div class="">
-        <p class="font-bold text-lg">No.</p>
-        <p class="font-semibold text-gray-800/70 text-md">1</p>
-      </div>
+    <div class="w-full h-fit min-h-20 p-5 border flex justify-between items-center bg-gray-50 shadow-xl rounded-lg">
       <div class="">
         <p class="font-bold text-lg">Name</p>
         <p class="font-semibold text-gray-800/70 text-md">Jieu Pandian</p>
