@@ -1,6 +1,6 @@
 <script>
 export default{
-  props: ['StudentsHome'],
+  props: ['studentHome'],
   data(){
     return{
 
@@ -35,17 +35,17 @@ export default{
 
     </div>
 
-    <div v-for="(student, index) in StudentsHome">
+    <div v-for="(students, index) in studentHome">
 
       <div class="bg-gray-50 py-5 rounded-md">
         <div class="grid grid-cols-6 h-full items-center text-center">
 
-          <p class="font-semibold">{{ student.no }}.</p>
-          <p class="font-semibold">{{ student.name }}</p>
-          <p class="font-semibold">{{ student.age }}</p>
-          <p class="font-semibold">{{ student.address }}</p>
-          <p class="font-semibold">{{ student.contact }}</p>
-          <p class="font-semibold">{{ student.status }}</p>
+          <p class="font-semibold">{{ students.no }}.</p>
+          <p class="font-semibold">{{ students.name }}</p>
+          <p class="font-semibold">{{ students.age }}</p>
+          <p class="font-semibold">{{ students.address }}</p>
+          <p class="font-semibold">{{ students.contact }}</p>
+          <p class="font-semibold">{{ students.status }}</p>
         </div>
       </div>
 
