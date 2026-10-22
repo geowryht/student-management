@@ -55,9 +55,9 @@ export default {
                 <button
                     type="button"
                     @click="closeModal"
-                    class="text-2xl text-gray-500 hover:text-red-500"
+                    class="text-2xl text-gray-500 hover:text-red-500 cursor-pointer"
                 >
-                    Cancel
+                    X
                 </button>
             </div>
 
@@ -142,14 +142,14 @@ export default {
                     <button
                         type="button"
                         @click="closeModal"
-                        class="rounded-lg border border-gray-300 px-5 py-2 font-semibold text-gray-700 hover:bg-gray-100"
+                        class="rounded-lg border border-gray-300 px-5 py-2 font-semibold text-gray-700 hover:bg-gray-100 cursor-pointer"
                     >
                         Cancel
                     </button>
 
                     <button
                         type="submit"
-                        class="rounded-lg bg-green-600 px-5 py-2 font-semibold text-white hover:bg-green-700"
+                        class="rounded-lg bg-blue-700 px-5 py-2 font-semibold text-white hover:bg-blue-500 cursor-pointer"
                     >
                         Save Changes
                     </button>
