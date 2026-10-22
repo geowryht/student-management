@@ -29,8 +29,8 @@ export default {
             this.$emit('update-student', { ...this.form })
         },
 
-        closeModal() {
-            this.$emit('close')
+        closeModal(i) {
+            this.$emit('close', i)
         }
     },
 
@@ -140,7 +140,7 @@ export default {
                 <div class="flex justify-end gap-3 pt-4">
                     <button
                         type="button"
-                        @click="closeModal"
+                        @click="closeModal(false)"
                         class="rounded-lg border border-gray-300 px-5 py-2 font-semibold text-gray-700 hover:bg-gray-100 cursor-pointer"
                     >
                         Cancel
