@@ -12,21 +12,26 @@ export default {
   },
   data() {
     return {
-      page: 'Home'
+      page: 'Home',
+      addStudents: false,
     }
   },
   methods: {
     showHome(i) {
       this.page = i;
     },
+
+    showModal(a) {
+      this.addStudents = a;
+    }
   }
 }
 </script>
 
 <template>
   <Navbar @go-home="showHome" />
-  <AddModal />
+  <AddModal v-if="addStudents" />
   <Home v-if="page === 'Home'" />
-  <Students v-if="page === 'Students'" />
+  <Students v-if="page === 'Students'" @open="showModal" />
   <Footer />
 </template>
