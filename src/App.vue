@@ -12,8 +12,7 @@ export default {
   },
   data() {
     return {
-      page: 'Home',
-      addStudents: false,
+      page: 'Home'
     }
   },
   methods: {
@@ -30,8 +29,8 @@ export default {
 
 <template>
   <Navbar @go-home="showHome" />
-  <AddModal v-if="addStudents" />
+  <AddModal />
   <Home v-if="page === 'Home'" />
-  <Students v-if="page === 'Students'" @open="showModal" />
+  <Students v-if="page === 'Students'" />
   <Footer />
 </template>
