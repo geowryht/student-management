@@ -75,26 +75,26 @@
           </div>
           <div class="mt-6 flex w-full flex-col justify-between text-white sm:flex-row md:mt-0 md:max-w-[341px]">
             <div class="">
-              <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Pages</p>
+              <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Studets</p>
               <ul>
                 <li class="mt-[15px]"><a
                     class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
                     href="/">Home</a></li>
                 <li class="mt-[15px]"><a
                     class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                    href="/our-tutors">News</a></li>
+                    href="/our-tutors">Report</a></li>
                 <li class="mt-[15px]"><a
                     class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                    href="/become-a-tutor">Contact</a></li>
+                    href="/become-a-tutor">User</a></li>
                 <li class="mt-[15px]"><a
                     class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                    href="/plans-and-pricing">Plans and pricing</a></li>
-                <li class="mt-[15px]"><a
+                    href="/plans-and-pricing">Log in</a></li>
+                <!-- <li class="mt-[15px]"><a
                     class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
                     href="/terms-and-conditions">Terms and conditions</a></li>
                 <li class="mt-[15px]"><a
                     class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                    href="/privacy-policy">Privcay policy</a></li>
+                    href="/privacy-policy">Privcay policy</a></li> -->
               </ul>
             </div>
             <div class="mt-6 flex flex-col gap-4 sm:mt-0">
