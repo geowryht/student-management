@@ -59,9 +59,9 @@ export default {
   <LoginModal v-if="login === true" @close="closeModal" />
 
   <Students v-if="page === 'Students'" @open="showModal" @open-modal="showEditModal" :studentStudents="listsOfStudents"/>
-  <EditModal v-if="editStudent" :studentEdit="editStudent" @close=""/>
+  <EditModal v-if="editStudent" :studentEdit="editStudent" @close="showEditModal"/>
 
-  <User v-if="page === 'user'" />
+  <User v-if="page === 'User'" />
   <Reports v-if="page === 'Reports'" />
 
   <Footer />
