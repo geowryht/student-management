@@ -1,11 +1,26 @@
 <script>
+export default {
 
+    data() {
+        return {
+
+        }
+    },
+    methods: {
+        xbnt(i) {
+            this.$emit('close', i);
+        },
+    }
+}
 </script>
 <template>
-    <div>
+    <div class="fixed w-full h-screen bg-black/80">
         <div class="flex justify-center items-center h-screen">
             <div
-                class="w-150 h-150 bg-gray-300 bg-[url(https://i.pinimg.com/originals/55/80/0c/55800c34ea440393432720ed75823915.gif)] p-8 bg-cover bg-center  shadow-[0_0_20px_gray] rounded-2xl">
+                class="w-150 h-150 bg-gray-300 bg-[url(https://i.pinimg.com/originals/55/80/0c/55800c34ea440393432720ed75823915.gif)] py-5 px-8 bg-cover bg-center  shadow-[0_0_20px_gray] rounded-2xl">
+                <div class="flex justify-end">
+                    <button @click="xbnt(false)" class="text-2xl cursor-pointer text-white font-bold">X</button>
+                </div>
                 <h1
                     class="text-5xl bg-clip-text text-transparent bg-[url(https://i.pinimg.com/originals/82/d9/ba/82d9bad02b953fcd4d37cd3a23a1e882.gif)] bg-cover bg-center font-bold  w-full text-center ">
                     LOGIN</h1>
@@ -18,7 +33,9 @@
                     <button
                         class="border-3 border-white w-fit px-20 h-fit p-3 mt-5 rounded-full hover:font-bold hover:bg-[url(https://i.pinimg.com/originals/77/bf/1a/77bf1a48392abe3813ec5806a66fb619.gif)] bg-cover bg-center">
                         <div class="flex justify-center gap-10">
-                            <img class="w-8" src="../assets/google-logo-transparent-png-11659866441wanynck5pd-removebg-preview (1).png" alt="">
+                            <img class="w-8"
+                                src="../assets/google-logo-transparent-png-11659866441wanynck5pd-removebg-preview (1).png"
+                                alt="">
 
                             <h1 class="text-2xl text-white">Login With Google</h1>
 
@@ -42,6 +59,7 @@
                         LOGIN
                     </button>
                 </div>
+
             </div>
         </div>
     </div>
