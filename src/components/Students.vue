@@ -11,6 +11,11 @@ export default {
       this.$emit('open', true);
     },
 
+    openEditModal(){
+      this.$emit('open-modal', true)
+    }
+
+
   }
 }
 
@@ -48,7 +53,7 @@ export default {
           <p class="font-semibold text-gray-800/70 text-md">Present</p>
         </div>
         <div class="space-x-2">
-          <button class="px-5 py-2 bg bg-green-600 text-gray-50 font-semibold rounded-md  hover:bg-green-400 
+          <button @click="openEditModal" class="px-5 py-2 bg bg-green-600 text-gray-50 font-semibold rounded-md  hover:bg-green-400 
         hover:text-black hover:scale-105 duration-300 hover:font-semibold cursor-pointer">Edit</button>
           <button class="px-5 py-2 bg bg-red-600 text-gray-50 font-semibold rounded-md  hover:bg-red-400 
         hover:text-black hover:scale-105 duration-300 hover:font-semibold cursor-pointer">Delete</button>

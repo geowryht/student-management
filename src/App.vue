@@ -4,11 +4,12 @@ import Home from './components/Home.vue'
 import Navbar from './components/Navbar.vue'
 import Students from './components/Students.vue'
 import AddModal from './components/AddModal.vue'
+import EditModal from './components/EditModal.vue'
 
 export default {
   name: 'App',
   components: {
-    Footer, Home, Navbar, Students, AddModal,
+    Footer, Home, Navbar, Students, AddModal,EditModal
   },
   data() {
     return {
@@ -19,7 +20,8 @@ export default {
                         {no: 1 ,  name: '', age: 0, address: '', contact: '', },],
 
       page: 'Home',
-      addStudents: false
+      addStudents: false,
+      editStudent: false,
     }
   },
   methods: {
@@ -29,7 +31,13 @@ export default {
 
     showModal(a) {
       this.addStudents = a;
+    },
+
+    showEditModal(s){
+      this.editStudent = s;
     }
+
+
   }
 }
 </script>
@@ -38,6 +46,7 @@ export default {
   <Navbar @go-home="showHome" />
   <AddModal v-if="addStudents" />
   <Home v-if="page === 'Home'" :studentHome="listsOfStudents" />
-  <Students v-if="page === 'Students'" @open="showModal"/>
+  <Students v-if="page === 'Students'" @open="showModal" @open-modal="showEditModal"/>
+  <EditModal v-if="editStudent" :studentEdit="editStudent" @close=""/>
   <Footer />
 </template>

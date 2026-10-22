@@ -1,9 +1,7 @@
 
 <script>
 export default {
-    props: {
-        student: Object
-    },
+    props: ['studentEdit'],
 
     emits: ['update-student', 'close'],
 
@@ -15,7 +13,8 @@ export default {
                 address: '',
                 contact: '',
                 status: 'Active'
-            }
+            },
+
         }
     },
 
@@ -42,7 +41,7 @@ export default {
 </script>
 
 <template>
-    <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+    <div  class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
 
         <div class="w-full max-w-lg rounded-xl bg-white p-6 shadow-2xl">
 
