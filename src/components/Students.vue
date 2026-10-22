@@ -12,6 +12,11 @@ export default {
       this.$emit('open', true);
     },
 
+    openEditModal(){
+      this.$emit('open-modal', true)
+    }
+
+
   }
 }
 
