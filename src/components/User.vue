@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div class="relative px-10">
+    <div class="h-screen px-10">
         <select class="text-lg text-black font-bold font-arial py-5" name="" id="">
             <option class="text-lg font-extralight text-black" value="">USERS</option>
         </select>

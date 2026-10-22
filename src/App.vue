@@ -5,11 +5,14 @@ import Navbar from './components/Navbar.vue'
 import Students from './components/Students.vue'
 import AddModal from './components/AddModal.vue'
 import LoginModal from './components/LoginModal.vue'
+import EditModal from './components/EditModal.vue'
+import User from './components/User.vue'
+import Reports from './components/Reports.vue'
 
 export default {
   name: 'App',
   components: {
-    Footer, Home, Navbar, Students, AddModal, LoginModal,
+    Footer, Home, Navbar, Students, AddModal, User, Reports, EditModal, LoginModal
   },
   data() {
     return {
@@ -22,6 +25,7 @@ export default {
       page: 'Home',
       addStudents: false,
       login: false,
+      editStudent: false,
     }
   },
   methods: {
@@ -38,6 +42,12 @@ export default {
     closeModal(i) {
       this.login = i;
     },
+
+    showEditModal(s){
+      this.editStudent = s;
+    }
+
+
   }
 }
 </script>
@@ -46,7 +56,13 @@ export default {
   <Navbar @go-home="showHome" @showloginmodal="openloginmodal" />
   <AddModal v-if="addStudents" />
   <Home v-if="page === 'Home'" :studentHome="listsOfStudents" />
-  <Students v-if="page === 'Students'" @open="showModal" />
   <LoginModal v-if="login === true" @close="closeModal" />
+
+  <Students v-if="page === 'Students'" @open="showModal" @open-modal="showEditModal" :studentStudents="listsOfStudents"/>
+  <EditModal v-if="editStudent" :studentEdit="editStudent" @close=""/>
+
+  <User v-if="page === 'user'" />
+  <Reports v-if="page === 'Reports'" />
+
   <Footer />
 </template>
