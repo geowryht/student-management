@@ -3,7 +3,7 @@
 
 
     <p class="text-2xl font-semibold mb-5 ">This is students page</p>
-    <div class="w-full h-fit min-h-20 p-5 text-gray-800 text-center border flex  justify-between items-center bg-gray-50 shadow-xl rounded-lg">
+    <div class="w-full h-fit min-h-20 p-5 text-gray-800 text-center border flex  justify-between items-center bg-gray-50 shadow-xl rounded-lg mb-2">
       <div class="">
         <p class="font-bold text-lg">No.</p>
         <p class="font-semibold text-gray-800/70 text-md">1</p>
