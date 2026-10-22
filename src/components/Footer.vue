@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="mt-8 w-full bg-pink-500 pt-9">
+    <div class="mt-8 w-full bg-blue-900 pt-9">
       <div class="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
         <div class="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
           <div class="md:w-[316px]">
@@ -16,17 +16,17 @@
             <div class="mt-[18px] flex gap-4">
               <a class="hover:scale-110" target="_blank" href="#"><img alt="facebook icon" loading="lazy" width="36"
                   height="36" decoding="async" data-nimg="1" style="color:transparent"
-                  src="https://www.englishyaari.com/img/facebook.svg" /></a><a class="hover:scale-110" target="_blank"
-                href="/"><img alt="linkdin icon" loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
-                  style="color:transparent" src="https://www.englishyaari.com/img/linkdin.svg" /></a><a
-                class="hover:scale-110" target="_blank" href="/"><img alt="instagram icon" loading="lazy" width="36"
+                  src="https://i.imgflip.com/a6n8ox.jpg" /></a><a class="hover:scale-110 rounded-full" target="_blank"
+                href="/"><img alt="linkdin icon" loading="lazy" width="50" height="36" decoding="async" data-nimg="1"
+                  style="color:transparent" src="https://www.bing.com/th/id/OIP.oLrlIP36NrQtbgQEjt96SwAAAA?w=152&h=111&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2" /></a><a
+                class="hover:scale-110 rounded-full" target="_blank" href="/"><img alt="instagram icon" loading="lazy" width="36"
                   height="36" decoding="async" data-nimg="1" style="color:transparent"
-                  src="https://www.englishyaari.com/img/instagram1.svg" /></a><a class="hover:scale-110" target="_blank"
-                href=""><img alt="twitter icon" loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
-                  style="color:transparent" src="https://www.englishyaari.com/img/twitter.svg" /></a><a
-                class="hover:scale-110" target="_blank" href="https://www.youtube.com/"><img alt="youtube icon"
+                  src="https://www.africanexponent.com/content/images/2025/01/download--4-.jpg" /></a><a class="hover:scale-110 rounded-full" target="_blank"
+                href=""><img alt="twitter icon" loading="lazy" width="50" height="50" decoding="async" data-nimg="1"
+                  style="color:transparent" src="https://www.bing.com/th/id/OIP.Lcag4KigiB7D4179fFQcegHaHa?w=152&h=104&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2" /></a><a
+                class="hover:scale-110 rounded-full" target="_blank" href="https://www.youtube.com/"><img alt="youtube icon"
                   loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style="color:transparent"
-                  src="https://www.englishyaari.com/img/youtube.svg" /></a>
+                  src="https://tse2.mm.bing.net/th/id/OIP.fErrgxEOGNvOUMEnKhY8SwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" /></a>
             </div>
           </div>
           <div class="md:w-[316px]">
@@ -100,11 +100,11 @@
             <div class="mt-6 flex flex-col gap-4 sm:mt-0">
               <p class="text-deutziawhite font-inter text-[18px] font-medium">Download the app</p>
               <div class="flex gap-4 sm:flex-col">
-                <a target="_blank" href="#"><img alt="facebook icon" loading="lazy" width="168" height="50"
+                <a target="_blank" href="#"><img alt="facebook icon" loading="lazy" width="110" height="50"
                     decoding="async" data-nimg="1" style="color:transparent"
-                    src="https://www.englishyaari.com/img/google-store.svg" /></a><a target="_blank" href="#"><img
-                    alt="facebook icon" loading="lazy" width="168" height="50" decoding="async" data-nimg="1"
-                    style="color:transparent" src="https://www.englishyaari.com/img/apple-store.svg" /></a>
+                    src="https://www.bing.com/th/id/OIP.lMlehYqlWlrzobTtzJ6fpAHaHa?w=152&h=111&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2" /></a><a target="_blank" href="#"><img
+                    alt="facebook icon" loading="lazy" width="110" height="50" decoding="async" data-nimg="1"
+                    style="color:transparent" src="https://www.bing.com/th/id/OIP.qjGOAZWHuM_JFbupV0x9hQHaGB?w=152&h=111&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2" /></a>
               </div>
             </div>
           </div>
