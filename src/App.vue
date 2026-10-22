@@ -17,6 +17,7 @@ export default {
 
       listsOfGuardian: [{no: 1 , name: '', age: 0, address: '', contact: '', },
                         {no: 1 ,  name: '', age: 0, address: '', contact: '', },],
+
       page: 'Home',
       addStudents: false
     }
@@ -35,7 +36,7 @@ export default {
 
 <template>
   <Navbar @go-home="showHome" />
-  <AddModal v-if="addStudents"/>
+  <AddModal v-if="addStudents" />
   <Home v-if="page === 'Home'" />
   <Students v-if="page === 'Students'" @open="showModal"/>
   <Footer />
