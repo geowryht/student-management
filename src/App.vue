@@ -38,6 +38,6 @@ export default {
   <Navbar @go-home="showHome" />
   <AddModal v-if="addStudents" />
   <Home v-if="page === 'Home'" :studentHome="listsOfStudents" />
-  <Students v-if="page === 'Students'" @open="showModal"/>
+  <Students v-if="page === 'Students'" @open="showModal" :studentStudents="listsOfStudents" />
   <Footer />
 </template>
